@@ -1,0 +1,230 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: #000;
+    color: #222;
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  .background {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/fondo.jpg') no-repeat center center / cover;
+    filter: blur(15px) brightness(0.6);
+    z-index: -1;
+  }
+  
+
+
+  .card {
+    max-width: 700px;              /* Más ancho */
+    margin: 40px auto;
+    padding: 40px 30px;
+    background: url('images/papel-textura.jpg') no-repeat center center / cover;
+    /* Fondo con opacidad */
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+   
+  
+  .cover img {
+  
+    border-radius: 12px;
+    margin-bottom: 20px;
+    width:100%;
+  
+  }
+  
+  .logo {
+    width: 28%;
+    margin-top: -120px;
+    border-radius: 50%;
+    background: white;
+    padding: 5px;
+  }
+  
+  h1 {
+    font-family: 'Playfair Display', serif;
+    margin-top: 50px;
+    font-size: 3em;
+    color: #ffffff;
+    
+  }
+  
+  .slogan {
+    font-style: italic;
+    font-size: 1.5em;
+
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .social-icons {
+    margin: 10px 0;
+  }
+  
+  .social-icons a {
+    margin: 0 5px;
+  }
+  
+  .social-icons img {
+    width: 35px;
+    height: 35px;
+    opacity: 0.8;
+    transition: 0.3s;
+  }
+  
+  .social-icons img:hover {
+    opacity: 1;
+  }
+  
+  h2 {
+    font-size: 1.2em;
+    margin: 25px 0 20px;
+    color: #ececec;
+  }
+  
+  .link-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111;
+    color: white;
+    padding: 16px 30px;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.05em;
+    border: 2px solid #fff; /* 👉 Borde blanco */
+    transition: background 0.3s, transform 0.2s, border-color 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  .link-btn:hover {
+    background: #000000;
+    transform: scale(1.12);
+  }
+  
+  .subscribe {
+    display: flex;
+    margin-top: 25px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background: white;
+  }
+  
+  .subscribe input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 0.9em;
+  }
+  
+  .subscribe button {
+    background: #14b8a6;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .subscribe button:hover {
+    background: #0e9489;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      margin: 20px;
+      padding: 20px 15px;
+      border-radius: 18px;
+    }
+  
+    h1 {
+      font-size: 2em;
+      margin-top: 30px;
+    }
+  
+    .slogan {
+      font-size: 1.2em;
+    }
+  
+    .logo {
+      width: 40%;
+      margin-top: -80px;
+    }
+  
+    .social-icons img {
+      width: 28px;
+      height: 28px;
+    }
+  
+    .link-btn {
+      padding: 12px 20px;
+      font-size: 0.95em;
+      border-radius: 10px;
+    }
+  
+    .subscribe input {
+      padding: 8px;
+      font-size: 0.85em;
+    }
+  
+    .subscribe button {
+      padding: 8px 12px;
+      font-size: 0.85em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.7em;
+    }
+  
+    .slogan {
+      font-size: 1em;
+    }
+  
+    .logo {
+      width: 50%;
+      margin-top: -60px;
+    }
+  
+    .link-btn {
+      width: 100%;
+      padding: 10px 16px;
+      font-size: 0.9em;
+    }
+  
+    .subscribe {
+      flex-direction: column;
+    }
+  
+    .subscribe input, .subscribe button {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+  
